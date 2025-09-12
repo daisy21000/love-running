@@ -217,11 +217,52 @@ main {
         width: 300px;
         right: 50px;
     }
+
+    /* Reasons */
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical > div,
+    #benefits-mental > div {
+        width: 75%;
+    }
+
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 /* Media query (992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #benefits {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #benefits-physical {
+        order: -2;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-start;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-end;
+    }
+
+    #benefits-image {
+        order: -1;
     }
 }
