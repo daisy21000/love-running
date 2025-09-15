@@ -213,6 +213,15 @@ main {
     color: #3a3a3a;
 }
 
+/* Media query (576px and up) */
+@media screen and (min-width: 576px) {
+    /* Gallery */
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query (786px and up) */
 @media screen and (min-width: 786px) {
     /* Header */
@@ -270,6 +279,11 @@ main {
     #benefits-mental > div {
         text-align: end;
         align-self: flex-end;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
     }
 }
 
