@@ -78,6 +78,22 @@ nav {
     display: block;
 }
 
+#nav-toggle:checked ~ nav {
+    display: block;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label > #cross {
+    display: block;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label > #hamburger {
+    display: none;
+}
+
+#cross {
+    display: none;
+}
+
 #nav-toggle {
     display: none;
 }
