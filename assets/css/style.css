@@ -358,7 +358,7 @@ main {
 
     /* Signup */
     #signup {
-        background-position: center;
+        background-image: url("../images/bluewater-sweden-unsplash.jpg");
     }
 
     #signup-form {
